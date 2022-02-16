@@ -1,30 +1,25 @@
-
 :root {
-	--header-height: 3rem;
 	
 	/*========== Colors ==========*/
-	/* Change favorite color */
-	--hue-color: 240; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-	
-	/* HSL color mode */
-	--first-color: hsl(var(--hue-color), 69%, 61%);
-	--first-color-second: hsl(var(--hue-color), 69%, 61%);
-	--first-color-alt: hsl(var(--hue-color), 57%, 53%);
-	--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
+	/* Deep gray */
 	--title-color: hsl(var(--hue-color), 8%, 15%);
+	/* darker dray */
 	--text-color: hsl(var(--hue-color), 8%, 45%);
-	--text-color-light: hsl(var(--hue-color), 8%, 65%);
+	/* lighter gray */
+	--text-color-light: hsl(var(--hue-color), 8%, 65%); 
 	--input-color: hsl(var(--hue-color), 70%, 96%);
 	--body-color: hsl(var(--hue-color), 60%, 99%);
-	--container-color: #fff;
 	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
 	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+	--light-color: #1b4f94;
+	--dark-color: #051850;
 	
 	
 	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 	--big-font-size: 3.25rem;
 	--h1-font-size: 2rem;
-	--h2-font-size: 1.25rem;
+	--h2-font-size: 1.5rem;
 	--h3-font-size: 1.125rem;
 	--normal-font-size: 0.938rem;
 	--small-font-size: 0.813rem;
@@ -45,35 +40,62 @@
 	--mb-2-5: 2.5rem;
 	--mb-3: 3rem;
 }
-.App {
-	text-align: center;
-}
 #landing-section{
 	position: absolute;
 	top: 20%;
 	left: 5%;
 }
 #landing-section h1{
-	color: var(--title-color);
 	font-size: var(--big-font-size);
 }
 #landing-section a{
-	font-size: var(--h1-font-size);
+	font-size: var(--h2-font-size);
 	text-decoration: none;
 }
 .button{
 	display: inline-block;
 	color: #fff;
 	margin-top: 50px;
-	margin-right: 10px;
-	padding: 10px 30px;
+	margin-right: 30px;
+	padding: 7px 30px;
 	border: 1px solid #00289e;
 	border-radius: 50px;
-	/* transition: 0.2s; */
 }
 .button-full{
-	background-color: #1c4fe7;
+	background-color: var(--dark-color);
 }
 .button-full:hover{
 	background-color: red;
+}
+.light{
+	color: var(--light-color);
+}
+.dark{
+	color: var(--dark-color);
+}
+#sect{
+	height: 100vh;
+	background-color: rgba(33, 89, 255,0.5);
+}
+.grid {
+	display: grid;
+	gap: 1.5rem;
+}
+.login-input{
+	width: 100%;
+	background-color: var(--input-color);
+	color: var(--text-color);
+	font-size: var(--normal-font-size);
+	border: none;
+	outline: none;
+	padding: .25rem .5rem .5rem 0;
+}
+.login-label{
+	font-size: var(--smaller-font-size);
+	color: var(--title-color);
+}
+.login-content{
+	background-color: var(--input-color);
+	border-radius: .5rem;
+	padding: .75rem 1rem .25rem;
 }
