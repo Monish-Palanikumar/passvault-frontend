@@ -11,7 +11,7 @@ import Login from "./Views/Login";
 function App() {
 	return (
 		<Router>
-			<Header />
+			{/* <Header /> */}
 			<Routes>
 				<Route path="/" element={<Landing />} />
 				<Route path="/dashboard" element={<Dashboard />} />
