@@ -54,10 +54,10 @@ h1{
 	font-size: var(--big-font-size);
 }
 a {
-	font-size: var(--h2-font-size);
 	text-decoration: none;
 }
 .button{
+	font-size: var(--h2-font-size);
 	display: inline-block;
 	color: #fff;
 	margin-top: 30px;
